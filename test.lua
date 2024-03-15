@@ -4,7 +4,7 @@ local DEFAULT_SETTINGS = {
 
 	COMPARISON_CHECKS = 5;
 
-	JUMP_WHEN_STUCK = true;
+	JUMP_WHEN_STUCK = false;
 }
 
 ---------------------------------------------------------------------
@@ -354,7 +354,7 @@ local Path = SimplePath.new(localPlayer, {
 
 	Costs = {
 
-		Climb = 2
+		Climb = 0.75
 
 	},
 		WaypointSpacing = 0.5
