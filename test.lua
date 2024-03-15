@@ -337,7 +337,7 @@ function SimplePath:Run(target)
 	return true
 end
 
-wait(5)
+print("Pathfinding!")
 
 local localPlayer = game.Players.LocalPlayer.Character
 local Goal = game:GetService("Workspace").Toys["Red Cannon"].Platform
