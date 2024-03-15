@@ -1,8 +1,8 @@
 local DEFAULT_SETTINGS = {
 
-	TIME_VARIANCE = 0.01;
+	TIME_VARIANCE = 0.07;
 
-	COMPARISON_CHECKS = 3;
+	COMPARISON_CHECKS = 5;
 
 	JUMP_WHEN_STUCK = true;
 }
@@ -357,7 +357,7 @@ local Path = SimplePath.new(localPlayer, {
 		Climb = 2
 
 	},
-		WaypointSpacing = 5
+		WaypointSpacing = 0.5
 
 })
 
