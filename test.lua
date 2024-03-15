@@ -342,6 +342,8 @@ print("Pathfinding!")
 local localPlayer = game.Players.LocalPlayer.Character
 local Goal = game:GetService("Workspace").Toys["Wealth Clock"].Platform
 
+
+
 local Path = SimplePath.new(localPlayer, {
 
 	AgentRadius = 3,
