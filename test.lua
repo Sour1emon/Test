@@ -337,4 +337,15 @@ function SimplePath:Run(target)
 	return true
 end
 
-return SimplePath
+wait(5)
+
+local localPlayer = game.Players.LocalPlayer.Character
+local Goal = workspace.Goal
+
+local Path = SimplePath.new(localPlayer)
+
+Path:Run(Goal)
+
+Path.Blocked:Connect(function()
+	Path:Run(Goal)
+end)
