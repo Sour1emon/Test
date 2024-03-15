@@ -357,7 +357,7 @@ local Path = SimplePath.new(localPlayer, {
 		Climb = 0.75
 
 	},
-		WaypointSpacing = 0.5
+		WaypointSpacing = 10
 
 })
 
