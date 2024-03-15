@@ -340,7 +340,7 @@ end
 wait(5)
 
 local localPlayer = game.Players.LocalPlayer.Character
-local Goal = workspace.Goal
+local Goal = game:GetService("Workspace").Toys["Red Cannon"].Platform
 
 local Path = SimplePath.new(localPlayer)
 
