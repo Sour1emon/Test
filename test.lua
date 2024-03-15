@@ -340,7 +340,7 @@ end
 print("Pathfinding!")
 
 local localPlayer = game.Players.LocalPlayer.Character
-local Goal = game:GetService("Workspace").Toys["Red Cannon"].Platform
+local Goal = game:GetService("Workspace").Toys["Wealth Clock"].Platform
 
 local Path = SimplePath.new(localPlayer, {
 
@@ -355,7 +355,7 @@ local Path = SimplePath.new(localPlayer, {
 		Climb = 2
 
 	},
-		WaypointSpacing = 10
+		WaypointSpacing = 5
 
 })
 
