@@ -342,7 +342,21 @@ print("Pathfinding!")
 local localPlayer = game.Players.LocalPlayer.Character
 local Goal = game:GetService("Workspace").Toys["Red Cannon"].Platform
 
-local Path = SimplePath.new(localPlayer)
+local Path = SimplePath.new(localPlayer, {
+
+	AgentRadius = 3,
+
+	AgentHeight = 6,
+
+	AgentCanClimb = true,
+
+	Costs = {
+
+		Climb = 2
+
+	}
+
+})
 
 Path:Run(Goal)
 
